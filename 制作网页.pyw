@@ -79,7 +79,9 @@ def saveFile():
 
         """
         k=k.replace("{{title}}",Enter.get())
-        nice="<p>"+text.get("1.0",END).replace("\n","&nbsp;<br/>")+"</p>"
+        nice="<p>"+text.get("1.0",END).replace("\n","&nbsp;<br/>\n")+"</p>"
+        nice=nice.replace("chu{","><p class=\"tuchu\">").replace("end}","<p>")
+        
         k=k.replace("{{wen}}",nice)
         f.write(k)
         get=text.get("1.0",END)

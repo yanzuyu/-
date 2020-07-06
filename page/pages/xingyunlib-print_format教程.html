@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>xingyunib.print_format用法</title>
+		<link href="../../def.css" rel='stylesheet' type='text/css'/>
+	</head>
+	<body>
+		<div align="center">
+		<div id="wen">
+		<h1>xingyunib.print_format用法</h1>
+		<p>hello大家好，&nbsp;<br/>
+我这个xingyunlib库终于出教程了&nbsp;<br/>
+&nbsp;<br/>
+今天我教大家如何使用&nbsp;<br/>
+xingyunlib库的print_format部分&nbsp;<br/>
+&nbsp;<br/>
+建议导入方式->from xingyunlib.print_format import*&nbsp;<br/>
+(因为这样会直接覆盖原来的print函数，很是方便)&nbsp;<br/>
+&nbsp;<br/>
+<p class="tuchu">1.print()&nbsp;<br/>
+print(*str,t=0.05,sepr=" ",end="\n")&nbsp;<br/>
+我们来逐个讲解他们的用法&nbsp;<br/>
+&nbsp;<br/>
+首先来看t参数：&nbsp;<br/>
+t=每个字停留的时间(默认为0.05秒)&nbsp;<br/>
+比如说，要每个字停留1秒，输出"nice"的代码如下：&nbsp;<br/>
+print("nice",t=1)&nbsp;<br/>
+&nbsp;<br/>
+然后我们来看end参数&nbsp;<br/>
+这个end参数其实和原来print的end参数是同样的作用&nbsp;<br/>
+默认是"\n"(换行符)&nbsp;<br/>
+&nbsp;<br/>
+最后我们看sepr参数，这个参数也是和原来print的sepr是同样的作用&nbsp;<br/>
+我们来看一个例子：&nbsp;<br/>
+print("ni","e",sepr="c")&nbsp;<br/>
+最后输出的就是“nice”&nbsp;<br/>
+&nbsp;<br/>
+我们来看大家这个很关心的变色简洁方式&nbsp;<br/>
+我们在变色具体支持这些颜色：&nbsp;<br/>
+红、白、绿、蓝、黄、青、紫&nbsp;<br/>
+用法如下（注意是两个斜杠）：&nbsp;<br/>
+'\\'+颜色（字的颜色变化）&nbsp;<br/>
+'\\b'+颜色（字的背景变化）&nbsp;<br/>
+'\\'(去除所有的变色效果)&nbsp;<br/>
+&nbsp;<br/>
+2.clear_os&nbsp;<br/>
+&nbsp;<br/>
+这个函数的作用就是清屏&nbsp;<br/>
+&nbsp;<br/>
+3.show_img(url,prin="正在显示文件（没看见的去任务栏找）",inpu=" 看/运行 完点【ENTER】键：")&nbsp;<br/>
+&nbsp;<br/>
+顾名思义，这个函数是用来显示图片的&nbsp;<br/>
+url就是图片的名称&nbsp;<br/>
+prin和inpu这两个参数大家可以实践体会一下是用来干什么的</p>&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+</p>
+		</div>
+		</div>
+	</body>
+	<footer>
+		<div align="center">
+			<br/>子昱|2020 All Rights Reserved.
+			<br/><a href="https://www.wenjuan.com/s/3Unqem9/">放话</a>
+			&nbsp;<a href="../index.html">个人主页</a><br/>QQ:2292068915  
+			<br/> 微信：eazy252625  
+			<br/> 邮箱：yanziyu252625@qq.com
+			<br/>  &nbsp;
+		</div>
+	</footer>
+</html>
